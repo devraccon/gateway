@@ -41,11 +41,11 @@ public class AuthController {
     @RequestMapping("/auth-service/login")
     public String authlogin(HttpServletRequest request){
 //        throw new RuntimeException("failed");
-//        try{
-//            Thread.sleep(5000);
-//        }catch(Exception e){
-//            e.printStackTrace();
-//        }
+        try{
+            Thread.sleep(5000);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         log.info("request server port : {}" , request.getServerPort());
         return "TEST-OK";
     }
